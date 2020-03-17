@@ -46,32 +46,5 @@ public class Fever {
 
 
 
-//str = str.replaceAll("\\.", ",");
-//str = str.replaceAll("\\.", ",");
-//    @GetMapping("/temperature")
-//    public String temperature(@RequestParam(value ="temperature", required = false, defaultValue = "0.0") double temperature, Model model) throws ParseException {
-//        String resultMessage = null;
-//        if(temperature >= 36.8 && temperature <= 37.5){
-//            resultMessage = "Your temperature is normal.";
-//        }else if(temperature > 37.5 && temperature <= 40.0){
-//            resultMessage = "You got fever!";
-//        }else if(temperature > 40.0){
-//            resultMessage = "You got hyperthermia! Goto hospital";
-//        }
-//        model.addAttribute("temperature", resultMessage);
-//        return "temperature";
-//    }
 
 
-
-//    //Create a Fever controller and methods with views to handle the following
-//    //Ask the user for their body temperature
-//    //Show the user if they have fever /normal / hyperthermia based on body temperature and treatment if needed
-//    //Use Model
-//    @GetMapping("/fever")
-//    public String fever(Model model){
-//        //model.addAttribute("feverController", feverList);
-//        return "fever";
-//    }
-//
-//}
