@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/CSS/myCSS.css}">
+</head>
+    <body>
+
+        <div>
+            <img th:src="@{/img/about.jpg}" width = "500" alt="about image"/>
+            <h2>This is me:</h2>
+            <table id="aboutTable">
+                <tr>
+                    <th>Förnamn</th>
+                    <th>Efternamn</th>
+                    <th>Ålder</th>
+                    <th>Bor</th>
+                </tr>
+                <tr>
+                    <td align="left">Peter</td>
+                    <td align="left">Sundberg</td>
+                    <td align="center">52 år</td>
+                    <td align="left">Karlskrona</td>
+                </tr>
+            </table>
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,21 @@
+
+body {
+    background-color: #e3eaa7;
+    padding-top: 20px;
+}
+
+#aboutTable th {
+    background-color: beige;
+    font-family: Calibri;
+    color: blue;
+    border: 1px solid black;
+    font-size: 14px;
+}
+#aboutTable td {
+    background-color: #e3eaa7;
+    font-family: Calibri;
+    color: black;
+    font-size: 13px;
+    border-bottom: 1pt solid black;
+}
+

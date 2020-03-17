@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">    <!-- xmlns:th="http://www.thymeleaf.org (to use functions of Thymeleaf) -->
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/CSS/myCSS.css}">
+</head>
+    <body>
+
+        <div>
+            <h1>Contact form</h1>
+            <form th:action="@{contact}" method = "post">
+                <input type = "text" id = "myString" name = "myString" placeholder = "Enter a contact"/>
+                <button type = "submit">Add contact</button>
+            </form>
+
+            <ol th:if="${!contacts.isEmpty()}">
+                <li th:each="myString: ${contacts}">
+                   <p th:text="${myString}"></p>
+                </li>
+            </ol>
+                <div th:unless="${!contacts.isEmpty()}">
+                    <p>No contacts added</p>
+                </div>
+
+        </div>
+
+    </body>
+</html>

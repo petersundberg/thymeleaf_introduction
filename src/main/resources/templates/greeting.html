@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+</head>
+<body>
+    <div> <!-- th:text="${greeting}" -->
+        <h1 th:text="${greeting}"></h1>
+        <!-- th:action="@{hello} -->
+        <form th:action="@{hello}" method="get">
+            <input type = "text" id="name" name = "name" placeholder = "Enter your name"/>
+            <button type = "submit">Send</button>
+        </form>
+    </div>
+
+
+</body>
+</html>

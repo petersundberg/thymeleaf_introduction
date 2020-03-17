@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature check</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/CSS/myCSS.css}">
+</head>
+
+    <body>
+
+        <div>
+            <h1>Enter your temperature to see if you are alive:</h1>
+                <form th:action = "@{temperature}" method = "get">
+                    <input type="number" id="temperature" name="temperature" placeholder="Enter temperature here"/>
+                    <br> <br>
+                    <button type="submit">Am I alive?</button>
+                    <h2 th:text="${temperature}"></h2>
+                </form>
+        </div>
+
+    </body>
+
+</html>
+
+

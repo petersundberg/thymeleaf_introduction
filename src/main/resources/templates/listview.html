@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Name View</title>
+</head>
+<body>
+    <div>
+        <h1>All names</h1>
+        <form th:action="@{list}" method = "post">
+            <input type = "text" id = "name" name = "name" placeholder = "Enter a name"/>
+            <button type = "submit">Send</button>
+        </form>
+        <ul th:if="${!names.isEmpty()}">
+            <!-- th:each="name: ${names}" -->
+            <li th:each="name: ${names}">
+                <!-- th:text="${name}" -->
+                <p th:text="${name}"></p>
+            </li>
+        </ul>
+        <div th:unless="${!names.isEmpty()}">
+            <p>No item names added</p>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
