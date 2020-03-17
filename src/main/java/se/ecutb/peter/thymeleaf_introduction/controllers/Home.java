@@ -27,6 +27,8 @@ public class Home {
         return "contact";
     }
 
+    //ska vi göra 2 metoder i "Home" som BÅDA heter "contact"? en med @Post och en med @Get vi pratar om url
+
     //Create a method named ”contact” that will take a String as input and return a String
     @PostMapping("/contact")
     public String contact(@RequestParam String myString){
@@ -49,7 +51,7 @@ public class Home {
 }
 
 
-    //ska vi göra 2 metoder i "Home" som BÅDA heter "contact"? en med @Post och en med @Get vi pratar om url
+
 
 
 
