@@ -14,9 +14,7 @@ public class Fever {
 
     @GetMapping("/temperature")
        public String temperature(@RequestParam(name = "temperature", required = false) Double temperature, Model model) {
-        //System.err.println(temperature);
         String resultMessage = "You haven't entered your temperature yet ...";
-
         if(temperature != null){
             if(temperature >= 0.0 && temperature <= 25.0){
                 resultMessage = "Your temp is " + temperature + " (really?): " + "You are probably dead, from freezing! There is nothing you can do, literally!";

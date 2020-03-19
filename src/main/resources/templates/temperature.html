@@ -11,7 +11,7 @@
         <div>
             <h1>Enter your temperature to see if you are alive:</h1>
                 <form th:action = "@{temperature}" method = "get">
-                    <input type="number" id="temperature" name="temperature" placeholder="Enter temperature here"/>
+                    <input type="number" id="temperature" name="temperature" placeholder="Enter temperature"/>
                     <br> <br>
                     <button type="submit">Am I alive?</button>
                     <h2 th:text="${temperature}"></h2>
